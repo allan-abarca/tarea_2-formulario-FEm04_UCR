@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con validación</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <div class="registro-container">
+
+        <h2>Registro de pacientes</h2>
+
+        <form class="formulario" id="formulario">
+            <div class="form-control">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre">
+                <div id="nombre-error-message" class="error-container"></div>
+            </div>
+            <div class="form-control">
+                <label for="email">Correo</label>
+                <input type="email" id="email" placeholder="Ingrese su correo">
+                <div id="email-error-message" class="error-container"></div>
+            </div>
+            <div class="form-control">
+                <label for="password">Clave</label>
+                <input type="password" id="password" placeholder="Ingrese su clave">
+                <div id="password-error-message" class="error-container"></div>
+            </div>
+            <div class="form-control">
+                <label for="confirmPassword">Confirmar clave</label>
+                <input type="password" id="confirmPassword" placeholder="Confirme su clave">
+                <div id="confirmPassword-error-message" class="error-container"></div>
+            </div>
+
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+    
+    <script src="/script.js"></script>
+</body>
+</html>
